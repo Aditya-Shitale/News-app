@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from 'react'
 import NavBar from './components/NavBar';
 import News from './components/News';
+<<<<<<< HEAD
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
@@ -11,6 +12,25 @@ const App = ()=> {
   const apiKey = process.env.REACT_APP_NEWS_API
   const [progress, setProgress] = useState(0)
  
+=======
+import { BrowserRouter as Router, Switch, Route,} from "react-router-dom";
+import LoadingBar from 'react-top-loading-bar'
+
+const App =()=> {
+ const pageSize = 5;
+ const apiKey = process.env.REACT_APP_NEWS_API
+
+  // state = {
+  //   progress:0
+  // }
+  const [progress, setProgress]= useState(0)
+
+  // setProgress = (progress)=>{
+  //   setState({progress: progress})
+  // }
+
+  
+>>>>>>> temp-branch
     return (
       <div>
         <Router>
@@ -33,7 +53,13 @@ const App = ()=> {
         </Router>
       </div>
     )
+<<<<<<< HEAD
  
 }
 
 export default App;
+=======
+  
+}
+export default App;
+>>>>>>> temp-branch

@@ -1,6 +1,11 @@
 import React from 'react'
 
+<<<<<<< HEAD
 const NewsItem = (props)=> {
+=======
+const NewsItem = (props)=>{
+ 
+>>>>>>> temp-branch
         let { title, description, imageUrl, newsUrl, author, date, source } = props;
         return (
             <div className="my-3">
@@ -24,7 +29,12 @@ const NewsItem = (props)=> {
                 </div>
             </div>
         )
+<<<<<<< HEAD
      
 }
+=======
+    }
+
+>>>>>>> temp-branch
 
 export default NewsItem
